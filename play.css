@@ -1,0 +1,257 @@
+*{
+    -webkit-tap-highlight-color: none;
+}
+body{
+    padding:0;
+    margin:0;
+}
+/*Style for the first full width container*/
+.playContainer{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.playContainer>ul{
+    padding:0;
+    margin:0;
+    display: flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    list-style-type: none;
+}
+.playContainer>ul>li{
+    margin:10px 5px;
+}
+/*Button shadow style*/
+.started{
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(65,123,240,1);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(65,123,240,1);
+    box-shadow: 0px 0px 3px 3px rgba(65,123,240,1);
+}
+/*Style and animation for the texts*/
+.animations{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/*first animation*/
+.anime1{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.anime1>span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 550;
+    color: orange;
+    background: yellow;
+    padding: 0 10px 0 10px;
+    overflow: hidden;
+    width: 325px;
+    white-space: nowrap;
+    text-overflow: clip;
+    display: block;
+    box-sizing: border-box;
+}
+.anime1>span:first-child{
+    position: absolute;
+    color:yellow;
+    background: orange;
+    clip-path: inset(0 100% 0 0);
+    -webkit-clip-path: inset(0 100% 0 0);
+}
+/*animation 1 anime*/
+.anime1-start{
+    animation-name: anime1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes anime1{
+    0%{
+        clip-path: inset(0 100% 0 0);
+        -webkit-clip-path: inset(0 100% 0 0);
+    }
+    100%{
+        clip-path: inset(0);
+        -webkit-clip-path: inset(0);
+    }
+}
+/*animation 2 anime*/
+.anime2-start{
+    animation-name: anime2;
+    animation-duration: 3s;
+}
+@keyframes anime2{
+    0%{
+        clip-path: inset(0 100% 0 0);
+        -webkit-clip-path: inset(0 100% 0 0);
+    }
+    40%{
+        clip-path: inset(0 0 0 0);
+        -webkit-clip-path: inset(0 0 0 0);
+    }
+    70%{
+        clip-path: inset(0 0 0 0);
+        -webkit-clip-path: inset(0 0 0 0);
+    }
+    100%{
+        clip-path: inset(0 0 0 100%);
+        -webkit-clip-path: inset(0 0 0 100%);
+    }
+}
+/*animation 3 anime*/
+.anime3-start{
+    animation-name: anime3-start;
+    animation-duration:4s;
+}
+@keyframes anime3-start{
+    0%{
+        clip-path: inset(0 100% 0 0);
+        -webkit-clip-path: inset(0 100% 0 0);
+    }
+    40%{
+        clip-path: inset(0 0 0 0);
+        -webkit-clip-path:inset(0 0 0 0);
+    }
+    60%{
+        clip-path: inset(0 0 0 0);
+        -webkit-clip-path: inset(0 0 0 0);
+    }
+    100%{
+        clip-path: inset(0 0 0 100%);
+        -webkit-clip-path:inset(0 0 0 100%);
+    }
+}
+.anime3-delay{
+    animation-name: anime3-delay;
+    animation-duration: 2.5s;
+    animation-delay: 0.6s;
+}
+@keyframes anime3-delay{
+    0%{
+        clip-path: inset(0 100% 0 0);
+        -webkit-clip-path:inset(0 100% 0 0);
+    }
+    35%{
+        clip-path: inset(0 0 0 0);
+        -webkit-clip-path: inset(0 0 0 0);
+    }
+    68%{
+        clip-path: inset(0 0 0 0);
+        -webkit-clip-path:inset(0 0 0 0);
+    }
+    100%{
+        clip-path: inset(0 0 0 100%);
+        -webkit-clip-path: inset(0 0 0 100%);
+    }
+}
+
+/*Style for the last button*/
+/*second animation*/
+.anime2{
+    position: absolute;
+    top: 41%;
+    left: 40%;
+}
+.anime2>span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 550;
+    color: orange;
+    background: yellow;
+    padding: 0 10px 0 10px;
+    overflow: hidden;
+    width: 290px;
+    white-space: nowrap;
+    text-overflow: clip;
+    display: block;
+    box-sizing: border-box;
+    clip-path: inset(0 100% 0 0);
+    -webkit-clip-path:inset(0 100% 0 0);
+}
+.anime2>span:first-child{
+    position: absolute;
+    color:yellow;
+    background: orange;
+}
+/*animation 4 anime*/
+.anime4-start{
+    animation-name: anime4-start;
+    animation-duration:4s;
+}
+@keyframes anime4-start{
+    0%{
+        clip-path: inset(0 100% 0 0);
+        -webkit-clip-path: inset(0 100% 0 0);
+    }
+    40%{
+        clip-path: inset(0 0 0 0);
+        -webkit-clip-path: inset(0 0 0 0);
+    }
+    60%{
+        clip-path:inset(0 0 0 0);
+        -webkit-clip-path:inset(0 0 0 0);
+    }
+    100%{
+        clip-path:inset(0 0 0 100%);
+        -webkit-clip-path:inset(0 0 0 100%);
+    }
+}
+.anime4-delay{
+    animation-name: anime4-delay;
+    animation-duration: 2.5s;
+    animation-delay: 0.6s;
+}
+@keyframes anime4-delay{
+    0%{
+        clip-path: inset(0 100% 0 0);
+        -webkit-clip-path: inset(0 100% 0 0);
+    }
+    35%{
+        clip-path:inset(0 0 0 0);
+        -webkit-clip-path:inset(0 0 0 0);
+    }
+    68%{
+        clip-path:inset(0 0 0 0);
+        -webkit-clip-path:inset(0 0 0 0);
+    }
+    100%{
+        clip-path:inset(0 0 0 100%);
+        -webkit-clip-path:inset(0 0 0 100%);
+    }
+}
+
+/*last sentence*/
+.anime3{
+    position: absolute;
+    top: 51%;
+    left: 40%;
+}
+.anime3>span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 550;
+    color: orange;
+    background: yellow;
+    padding: 0 10px 0 10px;
+    overflow: hidden;
+    width: 390px;
+    white-space: nowrap;
+    text-overflow: clip;
+    display: block;
+    box-sizing: border-box;
+    clip-path: inset(0 100% 0 0);
+    -webkit-clip-path:inset(0 100% 0 0);
+}
+.anime3>span:first-child{
+    position: absolute;
+    color:yellow;
+    background: orange;
+}
+@media screen and (max-width: 600px){
+    .anime1, .anime2, .anime3{
+        left: 10%;
+    }
+}
